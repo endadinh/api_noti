@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "defiaz_defiaz",
+    "password": "vjdEh$fMw*",
+    "database": "defiaz_defiaz",
+    "host": "149.28.128.37",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "defiaz_defiaz",
+    "password": "vjdEh$fMw*",
+    "database": "defiaz_defiaz",
+    "host": "149.28.128.37",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "defiaz_defiaz",
+    "password": "vjdEh$fMw*",
+    "database": "defiaz_defiaz",
+    "host": "149.28.128.37",
+    "dialect": "mysql"
+  }
+}

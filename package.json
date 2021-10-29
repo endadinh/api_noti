@@ -1,0 +1,25 @@
+{
+  "name": "demo-affilicate",
+  "version": "1.0.0",
+  "description": "a REST API for Defiaz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Enda Dinh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fcm-node": "^1.6.1",
+    "firebase": "^9.1.3",
+    "firebase-admin": "^10.0.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
