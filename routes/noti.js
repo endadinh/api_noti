@@ -8,10 +8,10 @@ const SERVER_KEY =
 router.get("/", async (req, res) => {
   try {
     const getNoti = await notiController.get();
-    console.log(getNoti);
     res.status(200).json({
       status: 200,
       message: getNoti.message,
+      data : getNoti.data
     });
   } catch (error) {
     throw new Error("Lỗi");
