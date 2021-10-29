@@ -2,6 +2,7 @@ const express = require("express");
 const notiController = require("../controllers/noti.controller");
 const router = express.Router();
 const FCM = require("fcm-node");
+const cors = require("cors");
 const SERVER_KEY =
   "AAAAYbuK3Y8:APA91bEVG_rDxJDPQyKw23-05wfUy5qdNgkmmuEVCqSmj8bxdY2dRXHEpDMJ8tWcMgwNWrfLTqvpaZ0NnYxSW1UTq95LWYuWflfjDr-LPqgvmz4RBwzm8cQQf9w-QjzLggsmkUsf7e9G";
 
@@ -17,7 +18,7 @@ router.get("/", async (req, res) => {
     throw new Error("Lỗi");
   }
 });
-router.post("/sendToAll", async (req, res, next) => {
+router.post("/sendToAll", cors(), async (req, res, next) => {
   try {
     const noti = {
       title: req.body.title,
